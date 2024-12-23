@@ -11,11 +11,14 @@ import java.util.Objects;
 public class Author {
     private int authorId;
     private String authorName;
-    
-    public Author(int authorId,String authorName)
+    private int birthYear;
+    private String nationality;
+    public Author(int authorId,String authorName,int birthYear,String nationality)
     {
         this.authorId = authorId;
         this.authorName=authorName;
+        this.birthYear=birthYear;
+        this.nationality=nationality;
     }
     public int getAuthorId()
     {
@@ -33,6 +36,22 @@ public class Author {
     {
         this.authorName=authorName;
     }
+    public int getbirthYear()
+    {
+        return birthYear;
+    }
+    public void setbirthYear(int birthYear)
+    {
+        this.birthYear=birthYear;
+    }
+    public String getNationality()
+    {
+        return nationality;
+    }
+    public void setNationality(String nationality)
+    {
+        this.nationality=nationality;
+    }
     @Override
     public boolean equals(Object obj)
     {
@@ -49,7 +68,7 @@ public class Author {
     @Override
     public String toString()
     {
-        return "Author name :"+ authorName + " (ID: " + authorId + ")";
+        return "Author name :"+ authorName +"Birth year: "+ birthYear +"Nationality : "+ nationality+ "(ID: " + authorId + ")";
     }
 }
 

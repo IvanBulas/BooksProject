@@ -49,6 +49,6 @@ public class Genre {
     @Override
     public String toString()
     {
-        return "Genre type :"+ genreType + " (ID: " + genreId + ")";
+        return "Genre  :"+ genreType + " (ID: " + genreId + ")";
     }
 }
